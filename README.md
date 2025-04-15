@@ -1,4 +1,4 @@
-# Campus Job Board
+# Campus Job Board 
 
 Welcome to the **Campus Job Board** repository! This is a web-based platform designed to help students find job and internship opportunities at their campus. The board allows students to easily browse job listings, filter by year, type (remote/onsite), and duration.
 
@@ -10,7 +10,7 @@ Welcome to the **Campus Job Board** repository! This is a web-based platform des
   - Job Type (Remote or Onsite)
   - Duration (Short-term, Long-term)
 - **Responsive Design**: Fully responsive layout to ensure a smooth experience across devices.
-  
+  view it live : https://swagat27.github.io/campus-job-board/
 ## Technologies Used
 
 - **HTML**: Structure of the webpage.
