@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Job and Internship Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Campus Job and Internship Board</h1>
+            <input type="text" id="search-bar" placeholder="Search jobs..." onkeyup="filterJobs()">
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="filters">
+            <div class="filter-group">
+                <label for="year-filter">Year:</label>
+                <select id="year-filter" onchange="filterJobs()">
+                    <option value="">All Years</option>
+                    <option value="1st">1st Year</option>
+                    <option value="2nd">2nd Year</option>
+                    <option value="3rd">3rd Year</option>
+                    <option value="4th">4th Year</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="type-filter">Job Type:</label>
+                <select id="type-filter" onchange="filterJobs()">
+                    <option value="">All Types</option>
+                    <option value="remote">Remote</option>
+                    <option value="onsite">On-site</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="duration-filter">Duration:</label>
+                <select id="duration-filter" onchange="filterJobs()">
+                    <option value="">All Durations</option>
+                    <option value="short-term">Short-term</option>
+                    <option value="long-term">Long-term</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="job-listings">
+            <h2>Job Listings</h2>
+
+            <!-- Job Card Example -->
+            <div class="job-card" data-year="2nd" data-type="remote" data-duration="short-term">
+                <h3>Software Engineering Internship</h3>
+                <p class="company-name">ABC Tech</p>
+                <p class="location">Location: Remote</p>
+                <a href="#" class="apply-btn">Apply Now</a>
+            </div>
+
+            <div class="job-card" data-year="3rd" data-type="onsite" data-duration="long-term">
+                <h3>Marketing Specialist</h3>
+                <p class="company-name">XYZ Corp</p>
+                <p class="location">Location: On-campus</p>
+                <a href="#" class="apply-btn">Apply Now</a>
+            </div>
+
+            <div class="job-card" data-year="1st" data-type="remote" data-duration="short-term">
+                <h3>Data Analyst Internship</h3>
+                <p class="company-name">Data World</p>
+                <p class="location">Location: Remote</p>
+                <a href="#" class="apply-btn">Apply Now</a>
+            </div>
+
+            <div class="job-card" data-year="4th" data-type="onsite" data-duration="long-term">
+                <h3>Library Assistant</h3>
+                <p class="company-name">University Library</p>
+                <p class="location">Location: On-campus</p>
+                <a href="#" class="apply-btn">Apply Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Campus Job Board. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
